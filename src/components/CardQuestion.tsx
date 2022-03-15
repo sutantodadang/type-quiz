@@ -30,8 +30,8 @@ const CardQuestion: React.FC<Props> = ({
       <div>
         {answers.map((val) => (
           <ButtonWrapper
-            correct={userAnswer?.correctAnswer == val}
-            userClicked={userAnswer?.answer == val}
+            correct={userAnswer?.correctAnswer === val}
+            userClicked={userAnswer?.answer === val}
             key={val}
           >
             <button
